@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Movie search</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Favicons -->
+    <link href="assets/img/logo-accent.svg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Gp
+    * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+    * Updated: Aug 15 2024 with Bootstrap v5.3.3
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+            <!-- Navbar logo -->
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+                <img src="assets/img/logo-accent.svg" alt="logo" width="80" height="80">
+            </a>
+
+            <!-- Navbar -->
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home<br></a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+            <img src="assets/img/hero-bg.jpg" alt="background picture" data-aos="fade-in">
+            <div class="container">
+                <!-- Otsikko -->
+                <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-6 col-lg-8">
+                        <h1>Search for movies<span>.</span></h1>
+                    </div>
+                </div>
+
+                <!-- Input kenttä sekä suurennuslasi nappula -->
+                <div class="row gy-4 mt-1 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-xl-6 col-lg-7 col-md-9 col-sm-8 col-7 d-flex align-items-center" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <input type="text" class="form-control" id="movieInput" placeholder="Enter a movie name...">
+                        <button id="searchBtn" class="btn"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Hero Section -->
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <!-- Kuva -->
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 order-2 order-lg-1 content">
+                        <!-- Otsikko -->
+                        <h3>About us</h3>
+                        <!-- Teksti -->
+                        <p>
+                            MovieFinder is a comprehensive platform dedicated to providing detailed information and
+                            search capabilities for films across all genres and eras. Designed for film enthusiasts,
+                            researchers, and casual viewers alike, our site offers a robust database where users can
+                            search for movies by title.
+                            <br><br>
+                            Our mission is to deliver accurate and up-to-date information, including genre, cast
+                            details, critical ratings, and more. By combining advanced search features with a rich
+                            repository of film
+                            data, MovieFinder serves as a reliable resource for those seeking to explore the breadth of
+                            cinematic history
+                            and contemporary film.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Karuselli -->
+            <div class="d-block mx-auto text-center" style="margin-top: 5%; max-width: 65vw;" data-aos="fade-up"
+                data-aos-delay="100">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner rounded-3">
+                        <div class="carousel-item active">
+                            <img class="d-block w-65" src="./assets/img/carousel11.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-65" src="./assets/img/carousel2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-65" src="./assets/img/carousel3.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </section><!-- /About Section -->
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+        <div class="copyright">
+            <div class="container text-center">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">GP</strong> <span>All Rights Reserved</span>
+                </p>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you've purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // OMDB API avain
+        const apiKey = '66dc2d03';
+
+        // Funktio elokuvien etsimiseen käyttäen OMDb API:a
+        function searchMovie() {
+            // Hae elokuvan nimi input kentästä käyttäen "movieInput" id:tä
+            const movieName = document.getElementById('movieInput').value;
+
+            if (movieName) {
+                // Generoi API URL
+                const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&t=${movieName}&plot=full`;
+
+                // Fetch elokuvan tietojen hakemiseen
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.Response === "True") {
+                            // sessionStorage mahdollistaa tiedon käytön movie.html sivulla
+                            sessionStorage.setItem('movieData', JSON.stringify(data));
+
+                            // Siirry sivulle movie.html
+                            window.location.href = 'movie.html';
+                        } else {
+                            alert('Movie not found!');
+                        }
+                    })
+                    .catch(error => console.error('Error fetching movie data:', error));
+            } else {
+                alert('Please enter a movie name.');
+            }
+        }
+
+        // Suurennuslasi nappulan eventListener
+        document.getElementById('searchBtn').addEventListener('click', searchMovie);
+
+        // Suurennuslasi nappulan aktivoiminen "Enter" näppäimellä
+        document.getElementById('movieInput').addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                searchMovie();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
