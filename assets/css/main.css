@@ -1794,13 +1794,6 @@ button.accordion-button.collapsed {
   border-radius: 3%;
 }
 
-/* button.accordion-button.collapsed {
-  border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
-  background-color: #060606;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 3%;
-} */
-
 .accordion {
   --bs-accordion-color: #060606;
   --bs-accordion-bg: white;
