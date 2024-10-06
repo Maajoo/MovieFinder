@@ -1842,3 +1842,10 @@ ul {
   margin-bottom: 1rem;
   list-style: none;
 }
+
+.plotStyle {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--nav-font);
+    color: white;
+}
