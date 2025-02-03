@@ -2,7 +2,7 @@
 
 MovieFinder is a web application that allows users to search for movies and view detailed information about them. It provides a user-friendly interface with a responsive design, making it easy to find and explore movies on any device.
 
-## 🚀 Live Demo
+## Live Demo
 
 Check out the live demo of the application [**here**](https://maajoo.github.io/MovieFinder/).
 
